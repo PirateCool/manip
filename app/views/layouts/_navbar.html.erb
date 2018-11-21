@@ -33,12 +33,14 @@
       <li><img class="rounded-circle" height="50px" width="50px" src="http://digitalspyuk.cdnds.net/17/25/320x320/square-1498216547-avatar-neytiri.jpg">
       <ul class = "drop-menu menu-1">
         <li><a href="/">Home</a></li>
-        <% if user_signed_in?%>
-          <li><a href="/users/sign_out">Logout</a></li>
-          <%else%>
+        <% unless user_signed_in?%>
           
-          <li><a href="/users/sign_in" rel="modal:open">Login</a></li>
+          <li><a href="/users/sign_in">Login</a></li>
           <li><a href="/users/sign_up">Sign up</a></li>
+          <%else%>
+          <li><a href="/users/sign_out">Logout</a></li>
+          
+
        
           <%end%>
           
@@ -47,13 +49,10 @@
     </ul>
 
       </nav>
-    <div id="ex1" class="modal">
-  <p>Thanks for clicking. That felt good.</p>
-  <a href="#" rel="modal:close">Close</a>
-</div>
+   
 
-<!-- Link to open the modal -->
-<p><a href="#ex1" rel="modal:open"></a></p>
+
+
       
         
        

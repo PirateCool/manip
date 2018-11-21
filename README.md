@@ -1,24 +1,27 @@
 # README
+exercice jquery
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ici vous pouvez trouver le [site en production](https://task-king.herokuapp.com/)
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+## versions
+```
+~rails', '~> 5.2.1'
+ruby ', '~> 2.5.1 
+```
+run:
+```
+bundle install
+```
 
-* Configuration
+## TEAM
 
-* Database creation
+* Martin (Github username: mrtintin13130)
 
-* Database initialization
+* Stéphane (Github username: Timmo404)
 
-* How to run the test suite
+* Elliot (Github username: nomoon456)
 
-* Services (job queues, cache servers, search engines, etc.)
+* Mickael (Github username: jango974)
 
-* Deployment instructions
-
-* ...
